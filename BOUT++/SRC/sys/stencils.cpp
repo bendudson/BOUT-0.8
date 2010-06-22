@@ -775,10 +775,11 @@ void calc_index(bindex *bx)
 /* Resets the index bx */
 void start_index(bindex *bx, REGION region)
 {
-  if((bx->region == RGN_NOBNDRY) || (bx->region == RGN_NOX)) {
-    bx->jx = MXG;
-  }else
-    bx->jx = 0;
+	// Initialize it to something
+  bx->jx = 0;
+
+  if((region == RGN_NOBNDRY) || (region == RGN_NOX))
+    bx->jx = mesh->xstart;
   
   bx->jy = jstart;
   bx->jz = 0;
