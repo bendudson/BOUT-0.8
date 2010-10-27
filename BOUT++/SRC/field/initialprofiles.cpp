@@ -34,7 +34,7 @@
 
 #include "globals.h"
 #include "initialprofiles.h"
-#include "topology.h"
+#include "meshtopology.h"
 
 #include <math.h>
 #include <string.h>

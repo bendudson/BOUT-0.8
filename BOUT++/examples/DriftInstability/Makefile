@@ -18,9 +18,5 @@ $(TARGET): $(BOUT_TOP)/lib/libbout++.a $(OBJ) $(BOUT_TOP)/make.config Makefile
 %.o: %.cpp $(BOUT_TOP)/make.config Makefile
 	$(CXX) $(CFLAGS) -c $< -o $@ $(BOUT_INCLUDE)
 
-.PHONY: clean
-clean:
-	@rm $(OBJ) $(TARGET)
-
 .PHONY: force
 force: clean $(TARGET)

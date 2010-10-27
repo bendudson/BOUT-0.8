@@ -45,7 +45,7 @@
 #include "fft.h"
 #include "utils.h"
 #include "dcomplex.h"
-#include "topology.h"
+#include "meshtopology.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

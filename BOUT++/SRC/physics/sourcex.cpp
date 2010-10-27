@@ -4,7 +4,7 @@
 #include "communicator.h"
 
 
-#include "topology.h"
+#include "meshtopology.h"
 #include "globals.h"
 #include <math.h>
 

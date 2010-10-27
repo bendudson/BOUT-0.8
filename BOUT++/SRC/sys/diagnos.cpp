@@ -27,7 +27,7 @@
 
 #include "diagnos.h"
 #include "utils.h"
-#include "topology.h"
+#include "meshtopology.h"
 #include "globals.h"
 
 #define PVEC_REAL_MPI_TYPE MPI_DOUBLE
