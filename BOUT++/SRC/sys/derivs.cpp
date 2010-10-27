@@ -506,13 +506,13 @@ int derivs_init()
   derivs_set(SecondDerivTable, "second", fD2DX2);
   if(StaggerGrids) {
     output.write("\tStag. Second: ");
-    derivs_set(SecondDerivTable, "second", sfD2DX2);
+    derivs_set(SecondStagDerivTable, "second", sfD2DX2);
   }
   output.write("\tUpwind      : ");
   derivs_set(UpwindTable,     "upwind", fVDDX);
   if(StaggerGrids) {
     output.write("\tStag. Upwind: ");
-    derivs_set(UpwindTable,     "upwind", sfVDDX);
+    derivs_set(UpwindStagTable,     "upwind", sfVDDX);
   }
   
   if((fDDX == NULL) || (fD2DX2 == NULL)) {
@@ -532,13 +532,13 @@ int derivs_init()
   derivs_set(SecondDerivTable, "second", fD2DY2);
   if(StaggerGrids) {
     output.write("\tStag. Second: ");
-    derivs_set(SecondDerivTable, "second", sfD2DY2);
+    derivs_set(SecondStagDerivTable, "second", sfD2DY2);
   }
   output.write("\tUpwind      : ");
   derivs_set(UpwindTable,     "upwind", fVDDY);
   if(StaggerGrids) {
     output.write("\tStag. Upwind: ");
-    derivs_set(UpwindTable,     "upwind", sfVDDY);
+    derivs_set(UpwindStagTable,     "upwind", sfVDDY);
   }
 
   if((fDDY == NULL) || (fD2DY2 == NULL)) {
@@ -558,13 +558,13 @@ int derivs_init()
   derivs_set(SecondDerivTable, "second", fD2DZ2);
   if(StaggerGrids) {
     output.write("\tStag. Second: ");
-    derivs_set(SecondDerivTable, "second", sfD2DZ2);
+    derivs_set(SecondStagDerivTable, "second", sfD2DZ2);
   }
   output.write("\tUpwind      : ");
   derivs_set(UpwindTable,     "upwind", fVDDZ);
   if(StaggerGrids) {
     output.write("\tStag. Upwind: ");
-    derivs_set(UpwindTable,     "upwind", sfVDDZ);
+    derivs_set(UpwindStagTable,     "upwind", sfVDDZ);
   }
 
 #ifdef CHECK
